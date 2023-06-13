@@ -1,0 +1,40 @@
+/*
+div.generating {
+    border-width:0 !important;
+    border-style:solid !important;
+}
+
+div.tab_nav {
+    border-width: 0 !important;
+    border-style: solid !important;
+}
+
+div.tab_nav > button {
+    border-bottom-color: transparent !important;
+}
+*/
+
+#header_title {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#button_col {
+    align-items: flex-end;
+}
+
+#refresh_btn {
+    max-width: 40px;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px;
+}
+#spinner_btn {
+    max-width: 40px;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px;
+}
