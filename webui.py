@@ -399,30 +399,32 @@ with demo:
         ],
         outputs=[output],
     )
-    # gr.Examples(
-    #     fn=generate,
-    #     examples=[
-    #         [
-    #             "An 80s driving pop song with heavy drums and synth pads in the background",
-    #             "./assets/bach.mp3",
-    #             "melody",
-    #         ],
-    #         ["A cheerful country song with acoustic guitars", "./assets/bolero_ravel.mp3", "melody"],
-    #         ["90s rock song with electric guitar and heavy drums", None, "medium"],
-    #         [
-    #             "a light and cheerly EDM track, with syncopated drums, aery pads, and strong emotions",
-    #             "./assets/bach.mp3",
-    #             "melody",
-    #         ],
-    #         [
-    #             "lofi slow bpm electro chill with organic samples",
-    #             None,
-    #             "medium",
-    #         ],
-    #     ],
-    #     inputs=[text, melody, model],
-    #     outputs=[output],
-    # )
+
+    gr.Examples(
+        fn=generate,
+        examples=[
+            [
+                "An 80s driving pop song with heavy drums and synth pads in the background",
+                "./assets/bach.mp3",
+                "melody",
+            ],
+            ["A cheerful country song with acoustic guitars", "./assets/bolero_ravel.mp3", "melody"],
+            ["90s rock song with electric guitar and heavy drums", None, "medium"],
+            [
+                "a light and cheerly EDM track, with syncopated drums, aery pads, and strong emotions",
+                "./assets/bach.mp3",
+                "melody",
+            ],
+            [
+                "lofi slow bpm electro chill with organic samples",
+                None,
+                "medium",
+            ],
+        ],
+        inputs=[text, melody, model],
+        outputs=[output],
+    )
+
     gr.Markdown(
         """
         This is a webui for MusicGen with 30+ second generation support.
